@@ -108,6 +108,11 @@
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
     </dependency>
+      <dependency>
+          <groupId>org.codehaus.sonar</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>5.1</version>
+      </dependency>
   </dependencies>
 
   <build>
@@ -215,6 +220,11 @@
           <check />
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.4.0.905</version>
+        </plugin>
     </plugins>
   </reporting>
 
@@ -225,6 +235,5 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0</url>
     </license>
   </licenses>
-
 
 </project>
